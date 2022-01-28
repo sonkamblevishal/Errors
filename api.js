@@ -21,13 +21,13 @@ var table = document.getElementById("table");
              td2 = document.createElement("td2");
              
              
-             td.innerText = data[i].name;
-             td1.innerText = data[i].domains[0];
-             td2.innerText = data[i]["state-province"];
-            //  console.log(data[i].country);
+             tr.innerText = data[i].name;
+             td.innerText = data[i].domains;
+             td1.innerText = data[i]["state-province"];
+             console.log(data[i].country);
 
 
-            tr.append(td,td1,td2);
+            tr.append(td,td1);
 
             // tr.appendChild(td1);
             table.appendChild(tr);
